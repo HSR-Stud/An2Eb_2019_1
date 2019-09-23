@@ -1,0 +1,40 @@
+   %Dokumentinformationen	======================================================================
+\newcommand{\titleinfo}{Analysis 2b - Formelsammlung}
+\newcommand{\authorinfo}{Dev4Future \& S.Walker, sowie weiter Autoren}
+\newcommand{\versioninfo}{$ FS \ 2019 $}
+\newcommand{\licence}{CC BY-NC-SA}
+
+%Auflistung der Autoren
+%Stefan Steiner auf Vorlage von F. Braun, R.Koller, L.Leuenberger und weiteren
+%An den Stoff von An2b angepasst von S. Walker und Dev4Future
+
+%eigene Befehle: ==========================================================================
+%weitere neue oder umdefinierte Befehle 
+\newcommand{\fb}[1]{\textcolor{red}{\textit{#1}}}	%Verweis auf Seite im Formelbuch
+
+% Die Verweise auf das Formelbuch beziehen sich auf den Bronstein 10. Auflage
+
+%Tabellen Höhe
+\renewcommand{\arraystretch}{2}
+
+
+% standard header
+\input{header/header.tex}
+
+\begin{document}
+	%Schriftart Helvetic
+	\normalfont
+	
+	%Reihen
+	\input{sections/reihen.tex}
+	\input{sections/reihenPotenz.tex}
+	\input{sections/grenzwerte.tex}
+	\input{sections/reihenBekannt.tex}
+	
+	%DGL
+	\input{sections/dglGrundlegendes.tex}
+	\input{sections/dgl1.tex}
+	\input{sections/dgl2.tex}
+	\input{sections/dgl1Orthogonaltrajektorien.tex}
+	\input{sections/dglLinear.tex}
+\end{document}

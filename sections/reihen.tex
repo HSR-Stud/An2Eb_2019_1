@@ -1,0 +1,140 @@
+\clearpage
+
+\begin{table}[h!]
+\section{Reihen}
+
+\begin{center}
+
+% % % % % % % % % % % % % % % % % %
+%Grundlegendes
+% % % % % % % % % % % % % % % % % %	
+\begin{tabularx}{\textwidth}{|p{100pt}|X|}
+\hline
+\rowcolor{Gray}
+\multicolumn{2}{|c|}{\textbf{Grundlegendes}}\\
+\hline
+	Reihe & 
+	Folge $\langle a_n \rangle = a_1,a_2...a_n \qquad$
+	Folge $\langle s_1\rangle = a_1$ und $\langle s_2 \rangle = a_1+a_2$\newline
+	Eine Reihe ist eine Folge ihrer Partialsummen: \quad $\lim\limits_{n\to\infty} s_n  =  \lim\limits_{n\to\infty}\sum\limits_{k=1}^{n}a_k = \sum\limits_{k=1}^{\infty}a_k = s$\\
+\hline
+	Konvergenz/Divergenz &
+	Konvergiert die unendliche Reihe $\langle s_n\rangle $so besitzt sie die Summe s. $\qquad
+	s=\sum\limits_{k=1}^{\infty} a_k$\newline
+	Existiert der Grenzwert nicht, so ist die Reihe divergent.\newline
+	Wenn man in einer Reihe endlich viele Summanden hinzu/weglässt, so bleibt sie Konvergent oder Divergent. (nicht so bei Folge)\\
+\hline
+	Vertauschen \newline der Summanden &
+	Für \textbf{unendliche Reihen} gilt, dass die einzelnen Summen untereinander \underline{nicht} vertauscht werden können\\
+\hline
+	Es gilt ausserdem&
+	$a=\sum\limits_{k=1}^{\infty} a_k \quad b=\sum\limits_{k=1}^{\infty} b_k$ \ sind konvergente Reihen $\quad a_k \leq b_k\quad \forall n\in \mathbb{N} \qquad \Rightarrow \quad a\leq b$\\
+	\hline
+\end{tabularx}
+
+% % % % % % % % % % % % % % % % % %
+%Konvergenzkriterien
+% % % % % % % % % % % % % % % % % %	
+\begin{tabularx}{\textwidth}{|p{100pt}|X|}
+\hline
+\rowcolor{Gray}
+\multicolumn{2}{|c|}{\textbf{Konvergenzkriterien} \qquad \fb{S.472-476}}\\
+\hline
+	Cauchyches Konvergenzkrit.&
+	Es existiert ein $\epsilon > 0 \qquad \epsilon \geq s_0=\sum\limits_{k=1}^{n_0}$\qquad
+	Nun gilt für alle $m>n>n_0 \qquad \vert \sum\limits_{k=n}^{m}a_k\vert <\epsilon$\newline
+	Dann Konvergiert die Reihe, ansonsten divergiert sie. $(|s_m-s_n|< \epsilon)$	 \\
+\hline
+	Reziprokkrit&
+	$ s = \sum\limits_{n=1}^{\infty} \dfrac{1}{n^\alpha} $
+	$\begin{cases}
+	$konvergent für$ & \alpha > 1\\
+	$divergent für $ & \alpha \leq 1
+	\end{cases}$\\
+\hline
+	Trivialkriterium \newline
+	\fb{S. 473  (7.2.1.2) }  & 
+	$\sum\limits_{n=1}^{\infty} a_n \quad
+	\begin{cases}
+	\lim\limits_{n\to\infty}a_n \neq 0 & \text{divergent}\\
+	\lim\limits_{n\to\infty}a_n = 0 & \text{konvergent oder divergent} \Rightarrow \text{weitere Tests notwendig!} \\
+	\end{cases}$\\
+\hline
+	Majorantenkrit.  \newline
+	\fb{S. 479  (7.2.5.1)}&
+	Ist die Reihe $ \sum\limits_{n=1}^{\infty} c_n $ konvergent, so konvergiert auch die Reihe $ \sum\limits_{n=1}^{\infty} |a_n|$ und somit auch
+	$\sum\limits_{n=1}^{\infty} a_n$ für $|a_n| \leq c_n$ (absolut).
+	\newline Dies gilt auch für $|a_n| \leq c_n$ erst ab einer Stelle $n_0 \in \mathbb{N}$.
+	\\
+\hline
+	Minorantenkrit.  &
+	Ist die Reihe $ \sum\limits_{n=1}^{\infty} d_n $ gegen $+\infty$ divergent, so gilt dies auch für die Reihe $ \sum\limits_{n=1}^{\infty} a_n $ 
+	bei $a_n \geq d_n$. \newline Dies gilt auch für $a_n \geq d_n$ erst ab einer Stelle $n_0 \in \mathbb{N}$. \\
+\hline
+	\begin{minipage}{100pt}
+		Quotientenkrit. \\
+		\fb{S.474  (7.2.2.2)}\\
+		Wurzelkrit.\\
+		\fb{S.474 (7.2.2.3)} 
+	\end{minipage} &
+	
+	
+	\begin{minipage}[c]{0.3\textwidth}
+		\vspace{10pt}
+		$ \lim\limits_{n \to \infty} \left|\dfrac{a_{n+1}}{a_n}\right| = \alpha $ der Reihe $ \sum\limits_{n=1}^{\infty}a_n \qquad$ \newline
+		$\lim\limits_{n \to \infty} \sqrt[n]{\left|a_n\right|} = \alpha $ der Reihe $ \sum\limits_{n=1}^{\infty} a_n$
+		
+	\end{minipage}
+	\begin{minipage}[c]{0.3\textwidth}
+		\vspace{10pt}
+		$\begin{cases}
+		\alpha < 1 & $(aboslut) konvergent$\\
+		\alpha = 1 & $keine Aussage!$\\
+		\alpha > 1 & $divergent$
+		\end{cases}$
+	\end{minipage}
+\\
+\hline	
+	
+	Integralkrit. \newline
+	\fb{S.475  (7.2.2.4)} &
+	$
+	\text{wenn}
+	\left.
+	\begin{cases}
+		{-f(x) \text { auf dem Intervall }[1, \infty) \text { definiert }} \\ 
+		{(\text { bzw. }[k, \infty))} \\ 
+		{-f(x) \geq 0}\\
+		{-f(x) \text { monoton fallend }}
+	\end{cases}\right\}
+	\Rightarrow
+	\begin{cases}{\int_{1}^{\infty} f(x) d x \text { konvergent } \Leftrightarrow \text { Reihe konvergent }} \\ {\int_{1}^{\infty} f(x) d x \text { divergent } \Leftrightarrow \text { Reihe divergent }}\end{cases}
+	$\\		
+\hline
+	Leibniz Krit. \newline
+	\fb{S.476 (7.2.3.3)} &
+	Die \textbf{alternierende} Reihe $ \sum\limits_{n=1}^{\infty} a_n $ ist konvergent, wenn die Folge $\langle\left|a_n\right|\rangle$ eine monoton fallende Nullfolge ($\lim\limits_{n \to \infty}
+	\left|a_n\right| = 0 $) ist.\\
+	&
+	Monotonie mittels Verhältnis $\left( \left|\frac{a_{n+1}}{a_n}\right| \right)$, Differenz ($ |a_{n+1}| - |a_n| $) oder vollständiger Induktion beweisen.\\
+	&
+	Abschätzung Restglied einer alternierenden konvergenten Reihe: $|R_n|=|s-s_n|\leq|a_n+1|$\\
+	\hline
+
+\rowcolor{Gray}
+\multicolumn{2}{|c|}{\textbf{Absolute und Bedinge Konvergenz} \qquad \fb{7.2.3 S.475}}\\
+\hline
+	Absolute Konvergenz&
+	Eine Reihe $\sum\limits_{n=1}^{\infty}a_n$ heisst \textbf{absolut konvergent}, wenn die
+	Reihe $\sum\limits_{n=1}^{\infty}|a_n|$ konvergent ist.\\
+\hline
+	Unbedingt\newline Konvergent & 
+	Unbedingt Konvergent ist eine Reihe die durch umordnen einen anderen Grenzwert hat oder wird divergiert.\\
+\hline
+	Bedingt Konvergent &
+	Unbedingt kann man umordnen, ohne dass sich konvergenz oder Grenzwert ändert.\\
+\hline
+\end{tabularx}
+
+\end{center}
+\end{table}	

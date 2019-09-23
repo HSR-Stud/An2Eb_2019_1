@@ -1,0 +1,70 @@
+% % % % % % % % % % % % % % % % % %
+%Bekannte Reihen
+% % % % % % % % % % % % % % % % % %	
+\begin{tabularx}{\textwidth}{|p{180pt}|p{180pt}|X|}
+	\hline
+	\rowcolor{Gray}
+	\multicolumn{3}{|c|}{\textbf{Bekannte Reihen} \qquad \fb{S.19-21, 477-478, (478)}}\\
+	\hline
+		\underline{Geometrische:}\vspace{1mm}\newline
+		 $s_n=\sum\limits_{k=0}^{n}a_0 \cdot q^{k}=a_0\cdot\dfrac{1-q^n}{1-q}$
+		 \newline
+		 $s=\sum\limits_{k=0}^{\infty}a_0\cdot q^{k}=\dfrac{a_0}{1-q}$
+		 \newline
+		 $\sum\limits_{k=0}^{\infty}a_0 \cdot q^{k}=$
+		 $\begin{cases}
+		 	q = 0 & undef\\
+			 |q| < 1 & 1\\
+			 q<(-1) & \pm \infty \\
+			 q>1 & +\infty 
+		 \end{cases}$
+		&		 
+		\underline{p-Reihe:}\vspace{1mm}\newline 
+		$\sum\limits_{n=0}^{\infty}\dfrac{1}{n^p}=$
+		$\begin{cases}
+			p>1 & konvergent\\
+			p\leq1 & divergent
+		\end{cases}$
+		&
+		\underline{Potenz-Reihe:}\vspace{1mm}\newline 
+		$\sum\limits_{n=1}^{\infty}\dfrac{x^n}{n^\alpha} \quad\Rightarrow \quad \rho=\lim _{n \rightarrow \infty} \sqrt[n]{n^{\alpha}}=1$ \vspace{1mm}\newline
+		Randwerte:\vspace{1mm}\newline 
+		$x = 1 \Rightarrow
+		\begin{cases}
+			\alpha > 1 & konvergiert\\
+			\alpha \leq 1 & divergiert\\
+		\end{cases}$
+		\newline
+		$x = (-1) \Rightarrow
+		\begin{cases}
+		\alpha > 0 & konvergiert\\
+		\alpha \leq 0 & divergiert\\
+		\end{cases}$
+		\\
+	\hline
+		\underline{Arithmetische:}\vspace{1mm}\newline 
+		$s_n=\sum\limits_{k=0}^{n}a_0 +k\cdot d=\frac{n}{2}(a_1+a_n)$
+		&
+		\underline{Exponentialfunktion:}\vspace{1mm}\newline
+		$\sum\limits_{n=0}^{\infty}\dfrac{x^n}{n!}=e^x = 1+x+\frac{x^{2}}{2}+\frac{x^{3}}{6}+\ldots(\rho=\infty)$
+		&
+		\underline{Binominal-Reihe}\vspace{1mm}\newline 
+		$\sum\limits_{n=0}^{\infty}\binom{\alpha}{n}\cdot x^n = (1+x)^\alpha\quad$
+		$|\rho| = 1$\newline
+		p.m. $\binom{u}{k}= \frac{u!}{(u-k)!k!}$
+		\\
+	\hline
+		\underline{Harmonische:} (divergiert)\vspace{1mm}\newline 
+		$s_n= \sum\limits_{k=1}^{n}\dfrac{1}{k}=1+\frac{1}{2}+\frac{1}{3}...$
+		&
+		\underline{alternierende Harmonische:} (bedingt konvergent)\vspace{1mm}\newline 
+		$\sum_{n=1}^{\infty}(-1)^{(n+1)} \frac{1}{n} = \ln (2)$
+		&
+		Spezialfall (Binominalreihe): $\Rightarrow \alpha=\frac{1}{2}$  \vspace{1mm}\newline
+		$(1+x)^{1 / 2}=\sqrt{1+x}=1+\frac{x}{2}-\frac{x^{2}}{8} \pm \cdots (\rho=1)$
+		\\
+	\hline
+\end{tabularx}	
+
+\end{center}
+\end{table}	

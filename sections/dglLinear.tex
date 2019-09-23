@@ -1,0 +1,111 @@
+\begin{table}[h!]
+\begin{center}
+
+% % % % % % % % % % % % % % % % % %
+%Lineare DGL n. Ordnung mit konstanten Koeffizienten
+% % % % % % % % % % % % % % % % % %	
+\begin{tabularx}{\textwidth}{|p{120pt}|X|}
+	\hline
+	\rowcolor{Gray}
+	\multicolumn{2}{|c|}{\textbf{Lineare DGL n. Ordnung mit konstanten Koeffizienten}\qquad \fb{S.571}}\\
+	\hline
+	Form & $\sum\limits_{k=0}^na_ky^{(k)}= y^{(n)}+a_{n-1}\cdot y^{(n-1)}+\ldots +a_0\cdot y=g(x)$\\
+	\hline
+\end{tabularx}
+\renewcommand{\arraystretch}{1}
+\begin{tabularx}{\textwidth}{|p{130pt}p{240pt}X|}
+	\multicolumn{3}{|c|}{n-verschiedene Homogene Lösungen}\\
+	\hline
+	\underline{Fall 1: r reelle Lösungen} & & Starke Dämpfung / Kriechfall\\
+	$\lambda_{r-1} \neq \lambda_r $ & $y_1=A_1\cdot e^{\lambda_1x}$, $y_2=A_2\cdot e^{\lambda_2x}$, \ldots ,$y_r= A_r\cdot e^{\lambda_rx}$ & \\
+	\\
+	$\lambda_{r-1} = \lambda_r \qquad (\Rightarrow \lambda)$
+	& $y_1=A_1\cdot e^{\lambda_x}$, $y_2=A_2\cdot x\cdot e^{\lambda x}$, \ldots,$y_r=A_r\cdot x^{r-1}\cdot e^{\lambda x}$ & \\ 
+	\\
+	\\
+	\underline{Fall 2: $k$ komplexe Lösungen} & & Schwache Dämpfung / \\
+	$ \lambda_{1,2}=\alpha \pm j\beta \neq \lambda_{k,k-1}$ & $y_k=e^{\alpha x}[A_k\cdot\cos(\beta\cdot x) + B_k\cdot\sin(\beta\cdot x)]$ & Schwingfall\\
+	\\
+	$ \lambda_{1,2}=\alpha \pm j\beta = \lambda_{k,k-1}$ & $y_1=e^{\alpha x}[A_1\cdot\cos(\beta\cdot x) + B_1\cdot\sin(\beta\cdot x)]$	&  \\
+	 & $y_2=x \cdot e^{\alpha x}[A_2\cdot\cos(\beta\cdot x) + B_2\cdot\sin(\beta\cdot x)]$ & \\
+	 & $ \ldots = \ldots $ & \\
+	 & $y_k=x^k \cdot e^{\alpha x}[A_k\cdot\cos(\beta\cdot x) + B_k\cdot\sin(\beta\cdot x)]$ & (k-fache Resonanz) \\
+	\\
+	\multicolumn{3}{|l|}{$Y_H = y_1+ y_2+ y_3+... + y_n$}\\
+	\hline
+\end{tabularx}
+\renewcommand{\arraystretch}{2}
+
+% % % % % % % % % % % % % % % % % %
+%Allgemeinste Lösung des partikulären Teils
+% % % % % % % % % % % % % % % % % %	
+\begin{tabularx}{\textwidth}{|p{300pt}|X|}
+\hline
+	\multicolumn{2}{|c|}{Allgemeinste Lösung des partikulären Teils}\\
+\hline
+	\multicolumn{2}{|c|}{$\underbrace{\sum_{k=0}^n a_k y^{(k)}}_{f(y,y',y'',\ldots)} = \underbrace{e^{\alpha x} (p_{m1}(x) \cos (\beta x) + q_{m2}(x) \sin (\beta x))}_{\text{Störglied}} \qquad \lambda \text{ aus Homogenlösung}$}\\
+\hline
+	Unterscheide die Lösungen des charakteristischen Polynoms ($\lambda$): &
+	mit m = max(m1, m2)\\
+
+	Fall a: $\alpha + j\beta \neq \lambda$, so ist &
+	$y_P = e^{\alpha x}(r_m(x)\cos(\beta x) + s_m(x) \sin(\beta x))$\\
+	Fall b: $\alpha + j\beta$  ist u-fache Lösung von $\lambda$, so ist &
+	$y_P = e^{\alpha x} x^u (r_m(x) \cos(\beta x) + s_m(x) \sin(\beta x))$\newline
+	u-fache Resonanz\\
+\hline
+\end{tabularx}
+% % % % % % % % % % % % % % % % % %
+%Grundlöseverfahren
+% % % % % % % % % % % % % % % % % %	
+\begin{tabularx}{\textwidth}{|p{350pt}|X|}
+\hline
+	\multicolumn{2}{|c|}{Grundlöseverfahren}\\
+\hline
+	$\begin{pmatrix}
+	g(x_0)=  & 0 & = & Ay_1(x_0)+By_2(x_0)+\ldots +Ny_n(x_0)\\
+	g'(x_0)= & 0 & = & Ay_1'(x_0)+By_2'(x_0)+\ldots +Ny_n'(x_0)\\
+	\vdots  & \vdots & \\                            
+	g^{(n-1)}(x_0)= & 1 & = & Ay_1^{(n-1)}(x_0)+By_2^{(n-1)}(x_0)+\ldots
+	+Ny_n^{(n-1)}(x_0)
+	\end{pmatrix}$ &
+	
+	ergibt $c_1,\ldots ,c_n$ für\newline
+	$y_{P}(x)=\int\limits_{x_0}^x{g(x+x_0-t)f(t)dt}$\\
+\hline
+\end{tabularx}
+
+\begin{tabularx}{\textwidth}{|p{120pt}|X|}
+	Anfangswertproblem&
+	$y(x_0) = y_0 \qquad y'(x_0) = y_1 \qquad y''(x_0) = y_2 \qquad \dots \qquad y^{(n-1)}(x_0) = y_{n-1}$\\
+\hline
+\end{tabularx}
+% % % % % % % % % % % % % % % % % %
+%Lineare Differentialgleichungssysteme erster Ordnung mit konstanten Koeffizienten
+% % % % % % % % % % % % % % % % % %	
+
+\begin{tabularx}{\textwidth}{|p{8cm}X|}
+\hline
+\rowcolor{Gray}
+\multicolumn{2}{|c|}{\textbf{Lineare Differentialgleichungssysteme erster Ordnung mit konstanten Koeffizienten}}\\
+\hline
+	\textbf{Form:}& $	\begin{matrix} \dot{x}=ax+by+f(t) \\ \dot{y}=cx+dy+g(t) \end{matrix} = \left(\begin{matrix} \dot{x} \\ \dot{y} \end{matrix}\right) = 
+				\underbrace{\left(\begin{matrix} a & b \\ c & d \end{matrix}\right)}_{\text{M}} \left(\begin{matrix} x \\ y \end{matrix}\right) + \underbrace{\left(\begin{matrix} f(t) \\ g(t) \end{matrix}\right)}_{\text{Störvektor}}$ \\
+
+
+	\textbf{Die allgem. Lösung ergibt sich aus der DGL:}&
+	$\underbrace{\ddot{x}-(a+d) \cdot \dot{x}+\overbrace{(a\cdot d-b\cdot c)}^{\text{det(M)}}\cdot x=\dot{f}(t)-d\cdot f(t)+b \cdot g(t)}_{\text{normale DGL 2.Ordnung} \rightarrow \text{nach $x$ auflösen}}$\\
+	& $y=\frac{1}{b}(\dot{x}-ax-f(t)))$\\
+
+\textbf{Anfangsbedinungen:} &
+$x_0(t_0) = x_0$ \\
+& $\dot{x}_0(t_0) = a \cdot x_0(t_0) + b \cdot y_0(t_0) + f(t_0) = a \cdot x_0 + b \cdot y_0 + f(t_0) $\\
+\hline
+\multicolumn{2}{|c|}{\textbf{Anordnung beachten!} Gesuchte Grösse immer zu oberst (in diesem Fall ist die gesuchte Grösse $x$)}\\
+\hline
+\end{tabularx} 
+
+
+
+\end{center}
+\end{table}	

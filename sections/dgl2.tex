@@ -1,0 +1,178 @@
+% % % % % % % % % % % % % % % % % %
+%DGL 2. Ordnung
+% % % % % % % % % % % % % % % % % %	
+% % % % % % % % % % % % % % % % % %
+% neue Seite
+
+\begin{table}[h!]
+\begin{center}
+
+\begin{tabularx}{\textwidth}{|p{120pt}|X|}
+\hline
+\rowcolor{Gray}
+\multicolumn{2}{|c|}{\textbf{DGL 2. Ordnung}\qquad \fb{S.564}}\\
+\hline
+	Form  & Lösung\\
+\hline
+	$y''+a_1\cdot y'+a_0\cdot y=g(x)$&
+	Wie bei 1. Ordnung: $Y=y_H+y_p$ \newline
+	Homogene DGL: $g(x)=0$ \qquad Inhomogene DGL: $g(x)\neq 0$\\
+\hline
+\hline
+	\rowcolor{LightCyan}
+	\multicolumn{2}{|c|}{Homogene DGL $\qquad y''+a_1\cdot y'+a_0\cdot y=0$}\\
+	\multicolumn{2}{|c|}{Charakt. Polynom:
+	$\qquad \lambda^2+a_1\cdot\lambda+a_0=0 \qquad$ von
+	$\qquad y''+a_1\cdot y'+a_0\cdot y=0$ 
+	$\qquad(\lambda_{1,2} = -\frac{a_1}{2} \pm \frac{\sqrt{a_1^2 - 4a_0}}{2})$}
+	\\
+	\hline
+	
+	\multicolumn{2}{|l|}{
+	$
+	D = \left(\frac{a_{1}}{2}\right)^{2}-a_{0} =
+	\left\{
+	\begin{aligned}
+		D>0: & \qquad \lambda_{1,2}=-\frac{a_{1}}{2} \pm \sqrt{\left(\frac{a_{1}}{2}\right)^{2}-a_{0}} & \qquad \in \mathbb{R} & \qquad \text{ starke D"ampfung }
+		\\
+		D=0: & \qquad \lambda \quad=\quad-\frac{a_{1}}{2} & \qquad \in \mathbb{R} & \qquad \text{ aperiodischer Grenzfall }
+		\\
+		D<0: & \qquad \lambda_{1,2}=-\frac{a_{1}}{2} \pm j \sqrt{a_{0}-\left(\frac{a_{1}}{2}\right)^{2}} & \qquad \in \mathbb{C}  \backslash \mathbb{R} & \qquad  \text{ schwache Dämpfung / Schwingfall }
+	\end{aligned} \right.
+	$
+	}
+	\\
+	\hline
+
+	\multicolumn{2}{|l|}{$(D > 0)\qquad$Falls: $\lambda_1\neq \lambda_2$ und $\lambda_{1,2} \in R\qquad$: 
+	$Y_H=Ae^{\lambda_1x}+Be^{\lambda_2x\qquad}$  
+	$\rbrace$ starke Dämpfung}\\
+	\hline
+	
+	\multicolumn{2}{|l|}{$(D = 0)\qquad$
+	Falls: $\lambda_1=\lambda_2$ und $\lambda_{1,2} \in R\qquad$: 
+	$Y_H=e^{\lambda_1x}(A+B\cdot x)\qquad$ 
+	$\rbrace$ aperiodischer Grenzfall}\\
+	\hline
+	
+	\multicolumn{2}{|l|}{$(D < 0)\qquad$ 
+	Falls $y_{H}=A \cdot \mathrm{e}^{\lambda x}=A \cdot \mathrm{e}^{-\frac{a_{1}}{2} x} \cdot \mathrm{e}^{ \pm j \sqrt{|D|} x}=A \cdot \mathrm{e}^{-\frac{a_{1}}{2} x} \cdot[\cos (\sqrt{|D|} x) \pm j \sin (\sqrt{|D|} x)]$ 
+	$\rbrace$ schwache Dämpfung / Schwingfall} \\
+	
+	(Eigen-)Frequenz&
+	$\omega=\alpha=\dfrac{\sqrt{|a_1^2 - 4a_0|}}{2} \qquad \qquad \qquad \omega=\sqrt{|D|}=\sqrt{\left|\delta^{2}-a_{0}\right|}$\\
+	
+	Dämpungskonstante&
+	$\delta=-\frac{a_{1}}{2}$\\
+	
+	Resonanz&
+	$\delta$ und $\omega$ stimmen überein mit Störglied\\
+\hline
+
+\hline
+	\rowcolor{LightCyan}
+	\multicolumn{2}{|c|}{inhomogene DGL $\qquad y''+a_1\cdot y'+a_0\cdot y=g(x)$ }\\
+	Grundlöseverfahren
+	\newline\newline
+	(Faltungsintegral)
+	&
+	\begin{compactenum}
+		\item Homogene DGL lösen: $g(x)=0$ setzen $\rightarrow$ ergibt $Y_H$
+		\item Anfangsbedingungen in Hom. DGL einsetzen. Wenn möglich: $x_0=0\quad \newline 
+				y_H(x_0)=0 \newline  y_H'(x_0)=1 \qquad$
+		\item A, B bestimmen
+		\item  Einsetzen der Hom. Glg. in Faltungsintegral 
+		$\Rightarrow\quad y_P(x)=\int\limits_{x_o}^{x} y_H(x+x_0-t)\cdot g(t)dt$
+		\item $Y=y_H+y_P$
+	\end{compactenum}\\
+
+\hline
+\end{tabularx}
+% % % % % % % % % % % % % % % % % %
+%Ansatz in Form des Störgliedes
+% % % % % % % % % % % % % % % % % %
+\begin{tabularx}{\textwidth}{|p{120pt}|X|}
+	\hline
+	Ansatz in Form des \newline
+	Störgliedes
+	&
+	\begin{compactenum}
+		\item Homogene DGL lösen: $g(x)=0$ setzen $\rightarrow$ ergibt $Y_H$
+		\item g(x) in Störgliedtabelle suchen
+		\item Fall bestimmen
+		\item $y_P$ aus Tabelle ablesen
+		\item $Y=y_H+y_P$
+	\end{compactenum}\\
+\end{tabularx}
+
+\renewcommand{\arraystretch}{1.1}
+\begin{tabularx}{\textwidth}{|p{270pt}|X|}
+	\hline 	$\mathbf{g(x)=p_n(x)}$ & 
+		($p_n(x)$ und $q_n(x)$ sind Polynome vom gleichen Grad)\\
+
+	 \hline	Fall 1: $a_0\neq 0$:          & $y_P = q_n(x)$\\
+		Fall 2: $a_0 = 0 , a_1\neq 0$:& $y_P=x\cdot q_n(x)$\\
+		Fall 3: $a_0=a_1=0$:          & $y_P=x^2\cdot q_n(x)$\\
+		($a_0$ und $a_1$ beziehen sich auf die \textbf{linke Seite} der DGL) & \\
+	\hline
+	\hline
+ 		$\mathbf{g(x)=e^{bx}\cdot p_n(x)}$ & \\
+	\hline	Fall 1: $b$ nicht Nullstelle des char. Polynoms:    &
+		$y_P=e^{bx}\cdot q_n(x)$\\
+		Fall 2: $b$ einfache Nullstelle des char. Polynoms: &
+		$y_P=e^{bx}\cdot x \cdot q_n(x)$\\
+		Fall 3: $b$ zweifache Nullstelle des char. Polynoms:&
+		$y_P=e^{bx}\cdot x^2\cdot q_n(x)$\\
+	\hline
+	\hline
+		$\mathbf{g(x) = e^{\alpha x}(p_n(x)\cos \beta x + q_n(x)\sin \beta x)}$ & \\
+	 \hline	Fall 1: $\alpha + j\cdot\beta$ \textbf{nicht Lösung} der charakteristischen Gleichung: &
+		$y_p = e^{\alpha x}\cdot(r_n(x)\cdot\cos(\beta \cdot x) + s_n(x)\cdot\sin( \beta\cdot x))$ \\
+		Fall 2: $\alpha + j\cdot\beta$ \textbf{Lösung} der charakteristischen Gleichung: &
+		$y_p = e^{\alpha x}\cdot \textbf{x} \cdot(r_n(x) \cdot \cos(\beta\cdot x) + s_n(x) \cdot\sin(\beta\cdot x))$\\
+	\hline
+\end{tabularx}
+\renewcommand{\arraystretch}{2}
+\end{center}
+\end{table}	
+
+
+\begin{table}[h!]
+\begin{center}
+
+% % % % % % % % % % % % % % % % % %
+%Vorgehen bei einer DGL in From des Störgliedes
+% % % % % % % % % % % % % % % % % %	
+\begin{tabularx}{\textwidth}{|p{25pt}|X|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Vorgehen bei einer DGL in Form des Störgliedes}}\\
+\hline
+ 	1. &$Y_H$ mit $\lambda_1$ und $\lambda_2$ berechnen\\
+	2. & Ordnung $n$ anhand der r.h.s der DGL bestimmen
+			Koeffizient $b$ anhand der r.h.s der DGL bestimmen\newline
+			(Achtung kann aus mehreren Elementen bestehen z.B. $x^2e^x + x$; Superposition)\\
+		
+	3. &	Anhand der Störglied Tabellen $y_p$ bestimmen\\
+	4. & 	$q_n = ax^n + bx^{n-1} + \dots + cx + d$\\
+	5. & 	$y_p$ ableiten und in die \textbf{ l.h.s} der DGL einsetzen. $\qquad y_p'' + a_1 y_p' + a_0y_p = f(x)$\\
+	6. & 	Koeffizienten bestimmen: $\textcolor{red}{x^2e^x}\cdot 18a + xe^x(6a + 12b) + e^x(2b + 6c) = \textcolor{red}{x^2e^x}$\newline
+			\begin{tabular}{ll}
+				$18a = 1$ & $18a$ kommt 1mal in der r.h.s vor\\
+				$(6a + 12b) = 0$ & $(6a + 12b)$ kommt 0mal vor auf der r.h.s\\
+				$(2b + 6c) = 0$ & $(2b + 6c)$ kommt 0mal vor auf der r.h.s
+			\end{tabular}\\
+	7. & 	Koeffizienten in $y_p$ einsetzen\\
+	8. & 	Wenn das Störglied $f(x)$ aus mehreren Teilen besteht (z.B. $x^2e^x + x$), Störglied auseinander nehmen und in zwei Teile $x^2e^x$ und $x$ unterteilen und Schritt 3 - 6 wiederholen\\
+	9. & 	$y = Y_H + y_{p1} + y_{p2} + \dots$\\
+
+\hline
+\end{tabularx}
+\begin{tabularx}{\textwidth}{|p{120pt}|X|}
+Superpositionsprinzip & $f(x)=c_1f_1(x)+c_2f_2(x)$\newline
+$y_1$ ist spezielle Lösung der DGL $\qquad$
+$y_1''+a_1\cdot y_1'+a_0\cdot y_1=c_1f_1(x)$ \newline
+$y_2$ ist spezielle Lösung der DGL $\qquad$
+$y_2''+a_1\cdot y_2'+a_0\cdot y_2=c_2f_2(x)$ \newline
+dann ist $y_P=c_1y_1+c_2y_2$\\
+\hline
+\end{tabularx}

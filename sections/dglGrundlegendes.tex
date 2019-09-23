@@ -1,0 +1,46 @@
+\clearpage
+
+\begin{table}[h!]
+\section{Differentialgleichungen}
+
+\begin{center}
+
+% % % % % % % % % % % % % % % % % %
+%Grundlegendes
+% % % % % % % % % % % % % % % % % %	
+\begin{tabularx}{\textwidth}{|p{100pt}|X|}
+\hline
+\rowcolor{Gray}
+\multicolumn{2}{|c|}{\textbf{Grundlegendes} \qquad \fb{S.553}} \\
+\hline
+	Grundsätzlich &
+	Eine Gleichung zur Bestimmung einer Funktion heisst Differentialgleichung, wenn sie mindestens eine Ableitung der gesuchten Funktion enthält \\
+\hline
+	Ordnung&
+	Die Ordnung wird bestimmt durch die höchste Ableitung der gesuchten Funktion\\
+\hline
+	Anfangswertproblem&
+	Funktion: $y^{(n)}=f(x,y,y',...,y^{(n-1)})$\newline
+	Das Anfangswertproblem hat die Aufgabe, eine Funktion zu finden, die folgendes erfüllt:\newline
+	$\quad y(x_0)=y_0 \quad y'(x_0)=y_1\quad ...\quad y^{n-1}(x_0)=y_{n-1}$\newline
+	Anfangswerte: $y_0, y_1,...,y_{n-1} \qquad$ mit Anfangspunkt $x_0$\\
+\hline
+	Existenz/Eindeutigkeit\newline
+	(Piccard-Lindelöf)&
+	Die Funktion $f(x, u, u_1, ..., u_{n-1})$ sei in einer Umgebung der Stelle \newline
+	$(x_0, y_0, y_1, ..., y_{n-1}) \in \mathbf{R^{n+1}}$ stetig und besitzt dort stetige partielle Ableitungen
+	nach $u, u_1, ..., u_{n-1}$ dann existiert in einer geeigneten Umgebung des Anfangspunktes $x_0$ genau eine Lösung des Anfangswertproblems\newline
+	$y^{(n)} = f(x, y, y', ...,y^{(n-1)})$ mit $y(x_0) = y_0, y'(x_0) = y_1, ..., y^{(n-1)}(x_0) = y_{n-1}$ \newline
+	\fbox{$\frac{\partial f}{\partial y}$ ... $\frac{\partial f}{\partial f^{(n-1)}}\qquad$ endlich beschränkt $\Rightarrow$ eindeutige Lösbarkeit}\\
+\cline{1-2}
+	&$y'=-\dfrac{x}{2}-\sqrt{y+\frac{x^2}{4}} \quad\quad\quad | \text{ AW: } y(0)=1$\newline
+	$y'=f(x,y) \iff f(x,y) = -\dfrac{x}{2}-\sqrt{4+\frac{x^2}{4}} \quad \Rightarrow \dfrac{\partial f}{\partial y}=\frac{-1}{2\sqrt{y+\frac{x^2}{4}}} \qquad
+	 |\text{ Nenner} \neq 0 \Rightarrow \quad y\neq -\frac{x^2}{4} \quad$\newline
+	für dieses AW-Problem $\rightarrow$ AW einsetzen: \quad $-\frac{1}{2\sqrt{1+0}}=-\frac{1}{2} \quad \Rightarrow$  eindeutig lösbar\\
+\cline{1-2}
+	&Anfangsbedingungen müssen ungabhängig sein: $y_0= ae^{x_0}+be^{-x_0}\quad y_1=ae^{x_0}-be^{-x_0} \Rightarrow det
+	\begin{pmatrix}e^{x_0}& e^{-x_0}\\e^{x_0}& -e^{-x_0}\end{pmatrix}= -2\neq 0$\\
+\hline
+	
+\end{tabularx}	
+

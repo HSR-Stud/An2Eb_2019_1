@@ -1,0 +1,61 @@
+% % % % % % % % % % % % % % % % % %
+%Potenzreihen
+% % % % % % % % % % % % % % % % % %	
+
+
+% % % % % % % % % % % % % % % % % %
+%neue Seite
+\begin{table}[h!]
+\begin{center}
+
+
+
+\begin{tabularx}{\textwidth}{|p{100pt}|X|}
+\hline
+\rowcolor{Gray}
+\multicolumn{2}{|c|}{\textbf{Potenzreihen} \qquad \fb{S.1075-79, (20), 482-487}}\\
+\hline
+	Grundlegend&
+	$\sum\limits_{n=0}^{\infty}a_n(x-x_0)^n$ ist eine Potenzreihe mit Entwicklungspunkt $x_0$ und $a_n$ als Koeffizienten\\
+\hline	
+	Konvergenzkrit&
+	$\sum\limits_{n=0}^{\infty}a_n x^n$ Es sei $\lim\limits_{n\to\infty}\sqrt[n]{|a_n|}=\beta \Rightarrow
+	\begin{cases}
+	\beta=0 & \text{absolut Konvergent für alle } x\in\mathbb{R}\\
+	\beta>0 & für 
+		\begin{cases}
+			\beta=0: & \text { absolut konvergent für alle } x \in \mathbb{R}\\
+			|x|>\frac{1}{\beta}: & \text { divergent }\\
+			|x|=\frac{1}{\beta} : & \text { keine Aussage möglich }
+	\end{cases}\\
+		\beta=\pm \infty : & \text { divergent ausser für } x=0
+	\end{cases}$\\
+\hline
+	Konvergenzradius & Wurzelkrit.: \quad
+	$\rho=\frac{1}{\lim _{n \rightarrow \infty} \sqrt[n]{\left|a_{n}\right|}}=\frac{1}{\beta} \qquad \text { für: }  \begin{cases}{\beta=0 \quad \Rightarrow \quad \rho=\infty} \\ {\beta=\pm \infty \quad \Rightarrow \quad \rho=0}\end{cases}$
+	\newline
+	Quotientenkrit.: \quad
+	$\rho=\lim\limits_{n\to\infty}\left\lvert\dfrac{a_n}{a_{n+1}}\right\lvert$\\
+\hline
+	Mehrere Summen&
+	$\sum\limits_{n=0}^{\infty}a_nx^n$ hat $\rho_1 \quad \sum\limits_{n=0}^{\infty}b_nx^n$ hat $\rho_2 \qquad
+	\rho = min\{\rho_1, \rho_2\} \quad $Dann gilt:\newline
+	$\sum\limits_{n=0}^{\infty}a_nx^n+\sum\limits_{n=0}^{\infty}b_nx^n = \sum\limits_{n=0}^{\infty}(a_n+b_n)x^n \newline 
+	\left(\sum\limits_{n=0}^{\infty}a_nx^n\right)\cdot\left(\sum\limits_{n=0}^{\infty}b_nx^n\right)= \sum\limits_{n=0}^{\infty}\left(\sum\limits_{k=0}^{n}a_kb_{n-k}\right)x^n$\\
+\hline
+	Ableitung Potreihen&
+	$\left(\sum\limits_{n=0}^{\infty}a_nx^n\right)'=\sum\limits_{n=1}^{\infty}n\cdot a_nx^{n-1}\qquad$ (für alle $x\in(-\rho;\rho)$ \quad Der Konvergenzradius $\rho$ bleibt gleich) \newline
+	Dies kann beliebig oft wiederholt werden: $f^{(i)}(x)=\sum\limits_{n=i}^{\infty}n(n-1)\ldots(n-i+1)\cdot a_nx^{n-i} \quad (\text{für alle } i \in \mathbb{N})$\\
+\hline
+	Aufleitung Potreihen&
+	$\int\sum\limits_{n=0}^{\infty}a_nx^ndx=\sum\limits_{n=0}^{\infty}a_n\int x^ndx=\sum\limits_{n=0}^{\infty}\dfrac{a_n}{n+1}\cdot x^{n+1} + C \qquad (\text{für alle x }\in(-\rho;\rho) \quad\rho \text{ bleibt dabei gleich})$\\
+\hline
+	Taylor-Reihe&
+	Für eine beliebig oft differenzierbare Funktion gibt es die Taylorreihe \fbox{$\sum\limits_{n=0}^{\infty}\dfrac{f^{(n)}(x_0)}{n!}\cdot (x-x_0)^n$}\newline
+	Für alle Glieder der Taylorreihe muss die folgende Bedingung erfüllt sein $\lim\limits_{n\to 0} T(\xi)=0 $\\
+\hline
+\end{tabularx}	
+
+
+%\end{center}
+%\end{table}
